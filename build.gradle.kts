@@ -20,10 +20,13 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.ws:spring-ws-core")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.mockito:mockito-core:4.8.0")
+	testImplementation("org.mockito:mockito-junit-jupiter:4.8.0")
 }
 
 tasks.withType<Test> {
